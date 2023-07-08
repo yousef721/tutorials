@@ -1,0 +1,27 @@
+div {
+    margin: 20px auto;
+    width: 250px;
+    height: 250px;
+    padding: 30px;
+    background-color: #eee;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+span {
+    margin: 20px auto;
+    width: fit-content;
+    display: block;
+    padding: 10px 20px;
+    background-color: #eee;
+    color: black;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    user-select: none;
+}

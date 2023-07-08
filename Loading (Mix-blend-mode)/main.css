@@ -1,0 +1,33 @@
+body {
+    background-color: black;
+}
+div {
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+div::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100px;
+    height: 100%;
+    background-color: white;
+    animation: move 4s linear infinite;
+}
+div span {
+    font-size: 80px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    mix-blend-mode: difference;
+}
+@keyframes move {
+    0%, 100% {
+        left: 0;
+    }
+    50% {
+        left: calc(100% - 100px);
+    }
+}
